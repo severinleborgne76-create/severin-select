@@ -86,7 +86,12 @@ export default function Home() {
       </section>
 
       <section className="portrait-section" id="severin">
-        <div className="portrait-placeholder">PHOTO SÉVERIN<br/>CHEZ UN PRODUCTEUR</div>
+        <div className="portrait-photo">
+          <img
+            src="/images/severin-chez-un-producteur.jpg"
+            alt={fr ? "Séverin chez un producteur" : "Séverin at a producer"}
+          />
+        </div>
         <div>
           <p className="eyebrow">SÉVERIN</p>
           <h2>{fr ? "Une sélection de la mer, construite sur le terrain." : "A seafood selection built in the field."}</h2>
