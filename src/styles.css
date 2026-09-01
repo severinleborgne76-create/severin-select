@@ -399,26 +399,49 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
 .note { padding-left: 18px; border-left: 2px solid var(--copper); color: var(--muted); }
 
 .portrait-section {
-  padding: clamp(70px, 9vw, 130px) clamp(24px, 7vw, 110px);
-  display: grid;
-  grid-template-columns: minmax(260px, .8fr) 1.2fr;
-  gap: clamp(40px, 8vw, 110px);
-  align-items: center;
+  padding: 0;
   background: #e7dfd1;
+  scroll-margin-top: 154px;
 }
-.portrait-photo {
-  min-height: 420px;
-  height: 100%;
+.portrait-band {
+  position: relative;
+  min-height: min(62vh, 640px);
+  display: flex;
+  align-items: flex-end;
   overflow: hidden;
-  border: 1px solid var(--line);
+  color: var(--cream);
+  background: #16384a;
 }
-.portrait-photo img {
+.portrait-band img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 420px;
   object-fit: cover;
-  object-position: 32% 42%;
+  object-position: 18% 42%;
   display: block;
+  transform: scale(1.02);
+}
+.portrait-on {
+  position: relative;
+  z-index: 2;
+  max-width: 920px;
+  padding: 72px clamp(24px, 7vw, 110px);
+}
+.portrait-on .eyebrow {
+  color: var(--copper-light);
+  text-shadow: 0 1px 10px rgba(7, 25, 35, .35);
+}
+.portrait-on h2 {
+  color: var(--cream);
+  margin-bottom: 0;
+  text-shadow: 0 2px 18px rgba(7, 25, 35, .45);
+}
+.portrait-under {
+  max-width: 780px;
+  margin: 0;
+  padding: clamp(36px, 5vw, 64px) clamp(24px, 7vw, 110px) clamp(70px, 9vw, 110px);
+  line-height: 1.75;
 }
 .portrait-placeholder, .image-placeholder {
   min-height: 420px;
@@ -539,7 +562,8 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   .universe--crustaces { grid-column: 1 / -1; min-height: 34vh; }
   .universe--singuliers { grid-column: 1 / -1; min-height: 34vh; }
   .product-grid { grid-template-columns: 1fr 1fr; }
-  .split, .portrait-section { grid-template-columns: 1fr; }
+  .split { grid-template-columns: 1fr; }
+  .portrait-section { scroll-margin-top: 126px; }
   .hero-media { width: 100%; }
   .hero-overlay {
     background:
@@ -562,6 +586,8 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   .brand-logo { height: 86px; max-width: calc(100vw - 96px); }
   .brand-signature { font-size: 8px; letter-spacing: .12em; margin-top: -6px; }
   .main-nav { top: 114px; }
+  .portrait-section { scroll-margin-top: 114px; }
+  .portrait-on { padding: 48px 24px; }
   .universe-mosaic { grid-template-columns: 1fr; }
   .universe--thon,
   .universe--crustaces,

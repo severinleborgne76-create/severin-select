@@ -86,21 +86,21 @@ export default function Home() {
       </section>
 
       <section className="portrait-section" id="severin">
-        <div className="portrait-photo">
+        <div className="portrait-band">
           <img
             src="/images/severin-chez-un-producteur.jpg"
             alt={fr ? "Séverin chez un producteur" : "Séverin at a producer"}
           />
+          <div className="portrait-on">
+            <p className="eyebrow">SÉVERIN</p>
+            <h2>{fr ? "Une sélection de la mer, construite sur le terrain." : "A seafood selection built in the field."}</h2>
+          </div>
         </div>
-        <div>
-          <p className="eyebrow">SÉVERIN</p>
-          <h2>{fr ? "Une sélection de la mer, construite sur le terrain." : "A seafood selection built in the field."}</h2>
-          <p>
-            {fr
-              ? "Séverin Select est une signature personnelle : une expertise des produits de la mer, construite au fil des rencontres avec des producteurs européens."
-              : "Séverin Select is a personal signature: seafood expertise, built through encounters with European producers."}
-          </p>
-        </div>
+        <p className="portrait-under">
+          {fr
+            ? "Séverin Select est une signature personnelle : une expertise des produits de la mer, construite au fil des rencontres avec des producteurs européens."
+            : "Séverin Select is a personal signature: seafood expertise, built through encounters with European producers."}
+        </p>
       </section>
 
       <section className="section contact-section" id="contact">
