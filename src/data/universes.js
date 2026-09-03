@@ -31,11 +31,26 @@ export const universes = [
   {
     slug: "crustaces-vivants",
     layout: "crustaces",
-    titleFr: "Crustacés vivants",
-    titleEn: "Live crustaceans",
-    lineFr: "La mer, encore vivante.",
-    lineEn: "The sea, still living.",
-    image: "/images/univers/crustaces.jpg"
+    href: "/selection/crabe-royal",
+    titleFr: "Crabe Royal de Norvège",
+    titleEn: "Norwegian King Crab",
+    lineFr: "Le roi de l’océan, encore vivant.",
+    lineEn: "The king of the ocean, still alive.",
+    image: "/images/crabe-royal/animal.jpg"
+  },
+  {
+    slug: "ormeau-rouge",
+    layout: "ormeau",
+    titleFr: "Ormeau rouge d'Islande",
+    titleEn: "Icelandic Red Abalone",
+    lineFr: "Une aquaculture singulière, au cœur de l'Islande.",
+    lineEn: "A unique aquaculture environment in Iceland.",
+    image: "/images/univers/ormeau-rouge-vivant.jpg",
+    badgeFr: "EN PROJET",
+    badgeEn: "PROJECT",
+    creditFr: "Photo : Aurora Abalone — abalone.is",
+    creditEn: "Photo: Aurora Abalone — abalone.is",
+    imageAlt: "Aurora Abalone"
   },
   {
     slug: "poissons-exception",
