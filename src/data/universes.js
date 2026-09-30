@@ -20,13 +20,16 @@ export const universes = [
     image: "/images/univers/grenouille.jpg"
   },
   {
-    slug: "caviar",
-    layout: "caviar",
-    titleFr: "Caviar",
-    titleEn: "Caviar",
-    lineFr: "Un grain, une lumière.",
-    lineEn: "A grain, a quiet light.",
-    image: "/images/univers/caviar.jpg"
+    slug: "saint-jacques-normandie",
+    layout: "coquille",
+    href: "/selection/saint-jacques-normandie",
+    titleFr: "Coquille Saint-Jacques de Normandie",
+    titleEn: "Normandy scallop",
+    lineFr: "Une saison, une noix, un territoire.",
+    lineEn: "A season, a nut, a territory.",
+    image: "/images/univers/saint-jacques-normandie.jpg?v=4",
+    badgeFr: "EN PROJET",
+    badgeEn: "PROJECT"
   },
   {
     slug: "crustaces-vivants",
@@ -53,21 +56,29 @@ export const universes = [
     imageAlt: "Aurora Abalone"
   },
   {
-    slug: "poissons-exception",
-    layout: "poissons",
-    titleFr: "Poissons d’exception",
-    titleEn: "Exceptional fish",
-    lineFr: "Des lignes rares, des eaux justes.",
-    lineEn: "Rare lines, exact waters.",
-    image: "/images/univers/poissons.jpg"
+    slug: "araignee-normandie",
+    layout: "araignee",
+    href: "/selection/araignee-normandie",
+    titleFr: "Chair d’araignée de mer de Normandie",
+    titleEn: "Normandy spider crab meat",
+    lineFr: "Un crustacé de travail, une chair à révéler.",
+    lineEn: "A working crustacean, a flesh to reveal.",
+    // Photo: Larra Jungle Princess — CC BY 2.0 — https://commons.wikimedia.org/wiki/File:Centollo_Castro_Urdiales.jpg
+    image: "/images/univers/araignee-normandie.jpg?v=2",
+    badgeFr: "EN PROJET",
+    badgeEn: "PROJECT"
   },
   {
-    slug: "produits-singuliers",
-    layout: "singuliers",
-    titleFr: "Produits singuliers",
-    titleEn: "Singular products",
-    lineFr: "Ce que l’on ne trouve pas ailleurs.",
-    lineEn: "What cannot be found elsewhere.",
-    image: "/images/univers/singuliers.jpg"
+    slug: "couteaux-dzm",
+    layout: "couteaux",
+    href: "/selection/couteaux-dzm",
+    titleFr: "Couteaux",
+    titleEn: "Razor clams",
+    lineFr: "Un coquillage de précision, encore à arrêter.",
+    lineEn: "A precise shellfish, still to be settled.",
+    // Photo: Juan Emilio Prades Bel — CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Navajas_(Ensis),_marisco.jpg
+    image: "/images/univers/couteaux.jpg",
+    badgeFr: "EN PROJET",
+    badgeEn: "PROJECT"
   }
 ];

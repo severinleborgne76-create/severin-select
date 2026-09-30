@@ -314,6 +314,9 @@ button, input, textarea { font: inherit; }
   line-height: 1.15;
 }
 .product-copy p { margin: 4px 0; color: var(--muted); }
+.product-image .universe-badge {
+  z-index: 2;
+}
 .text-link {
   display: block;
   margin-top: auto;
@@ -331,27 +334,22 @@ button, input, textarea { font: inherit; }
 .universe-mosaic {
   display: grid;
   grid-template-columns: 1.15fr 1.05fr 1.2fr;
-  grid-template-rows:
-    minmax(190px, 22vh)
-    minmax(190px, 22vh)
-    minmax(190px, 22vh)
-    minmax(190px, 22vh)
-    minmax(190px, 22vh)
-    minmax(190px, 22vh);
+  grid-template-rows: repeat(6, minmax(240px, 22vh));
   gap: 12px;
 }
 .universe {
   position: relative;
   overflow: hidden;
   display: block;
-  min-height: 240px;
+  min-height: 0;
+  height: 100%;
   color: var(--cream);
   background: var(--navy);
 }
 a.universe:hover .universe-copy h3 { color: var(--copper-light); }
 .universe--thon { grid-column: 1 / 3; grid-row: 1 / 3; }
 .universe--saint-jacques { grid-column: 3; grid-row: 1 / 3; }
-.universe--caviar { grid-column: 1; grid-row: 3; }
+.universe--araignee { grid-column: 1; grid-row: 3; }
 .universe--crustaces {
   grid-column: 2 / 4;
   grid-row: 3 / 5;
@@ -361,7 +359,7 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   object-position: 46% 48%;
 }
 .universe--crustaces .universe-copy p { max-width: 34ch; }
-.universe--poissons { grid-column: 1; grid-row: 4; }
+.universe--couteaux { grid-column: 1; grid-row: 4; }
 .universe--ormeau {
   grid-column: 1 / 3;
   grid-row: 5 / 7;
@@ -379,7 +377,18 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
       rgba(7, 25, 35, .78) 100%);
 }
 .universe--ormeau .universe-copy p { max-width: 36ch; }
-.universe--singuliers { grid-column: 3; grid-row: 5 / 7; }
+.universe--coquille { grid-column: 3; grid-row: 5 / 7; }
+.universe--coquille img {
+  object-position: 50% 46%;
+}
+.universe--placeholder {
+  background:
+    radial-gradient(ellipse at 72% 18%, rgba(185, 130, 92, .16), transparent 46%),
+    radial-gradient(ellipse at 28% 88%, rgba(26, 92, 111, .38), transparent 52%),
+    var(--navy);
+}
+.universe--coquille .universe-copy h3,
+.universe--araignee .universe-copy h3 { max-width: 16ch; }
 .universe-badge {
   position: absolute;
   top: clamp(16px, 2vw, 24px);
@@ -410,6 +419,16 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   transition: transform .8s ease;
 }
 .universe:hover img { transform: scale(1.045); }
+@media (min-width: 901px) {
+  .universe--coquille img {
+    object-position: 50% 52%;
+    transform: scale(1.72);
+    transform-origin: 50% 58%;
+  }
+  .universe--coquille:hover img {
+    transform: scale(1.8);
+  }
+}
 .universe-veil {
   position: absolute;
   inset: 0;
@@ -601,11 +620,11 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   }
   .universe--thon,
   .universe--saint-jacques,
-  .universe--caviar,
+  .universe--araignee,
   .universe--crustaces,
   .universe--ormeau,
-  .universe--poissons,
-  .universe--singuliers {
+  .universe--couteaux,
+  .universe--coquille {
     grid-column: auto;
     grid-row: auto;
   }
@@ -613,9 +632,10 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   .universe--saint-jacques { min-height: 44vh; }
   .universe--crustaces { grid-column: 1 / -1; min-height: 48vh; }
   .universe--ormeau { grid-column: 1 / -1; min-height: 48vh; }
-  .universe--caviar { min-height: 32vh; }
-  .universe--poissons { grid-column: 1 / -1; min-height: 34vh; }
-  .universe--singuliers { grid-column: 1 / -1; min-height: 34vh; }
+  .universe--coquille { min-height: 44vh; }
+  .universe--coquille img { object-position: 50% 44%; }
+  .universe--araignee,
+  .universe--couteaux { min-height: 36vh; }
   .product-grid { grid-template-columns: 1fr 1fr; }
   .split { grid-template-columns: 1fr; }
   .portrait-section { scroll-margin-top: 126px; }
@@ -647,7 +667,10 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   .universe--thon,
   .universe--crustaces,
   .universe--ormeau,
-  .universe--singuliers { grid-column: 1; }
+  .universe--coquille,
+  .universe--araignee,
+  .universe--couteaux { grid-column: 1; }
+  .universe--coquille img { object-position: 50% 55%; }
   .universe { min-height: 62vw; }
   .universe--thon { min-height: 78vw; }
   .universe--crustaces { min-height: 78vw; }
@@ -674,6 +697,12 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
 .jadran-hero-media {
   position: absolute;
   inset: 0;
+}
+.jadran-hero-media.photo-placeholder {
+  background: var(--navy);
+}
+.jadran-hero-media.photo-placeholder .image-fallback {
+  padding: 0;
 }
 .jadran-hero-media img {
   width: 100%;
@@ -817,6 +846,10 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
 
 .jadran-page .accent-panel { background: #e9dfd1; }
 .jadran-page .section-heading.left { max-width: 780px; }
+.reserved-facts strong {
+  color: rgba(185, 130, 92, .55);
+  font-weight: 500;
+}
 .photo-studio { background: #f4eee3; }
 .photo-studio img {
   object-fit: contain;

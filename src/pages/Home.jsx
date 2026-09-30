@@ -39,8 +39,8 @@ export default function Home() {
           <h2>{fr ? "La Sélection" : "The Selection"}</h2>
           <p>
             {fr
-              ? "Six univers de la mer. Des origines, des gestes, des territoires."
-              : "Six worlds of the sea. Origins, gestures, territories."}
+              ? "Des origines, des gestes, des territoires."
+              : "Origins, gestures, territories."}
           </p>
         </div>
         <div className="universe-mosaic">

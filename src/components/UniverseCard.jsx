@@ -3,16 +3,16 @@ import { useState } from "react";
 export default function UniverseCard({ universe, lang }) {
   const title = lang === "fr" ? universe.titleFr : universe.titleEn;
   const line = lang === "fr" ? universe.lineFr : universe.lineEn;
-  const [hasPhoto, setHasPhoto] = useState(true);
+  const [hasPhoto, setHasPhoto] = useState(Boolean(universe.image));
   const [loadedSrc, setLoadedSrc] = useState(universe.image);
   if (universe.image !== loadedSrc) {
     setLoadedSrc(universe.image);
-    setHasPhoto(true);
+    setHasPhoto(Boolean(universe.image));
   }
 
   const content = (
     <>
-      {hasPhoto && (
+      {hasPhoto && universe.image && (
         <img
           src={universe.image}
           alt={universe.imageAlt || ""}
@@ -33,7 +33,11 @@ export default function UniverseCard({ universe, lang }) {
     </>
   );
 
-  const className = `universe universe--${universe.layout}`;
+  const className = [
+    "universe",
+    `universe--${universe.layout}`,
+    universe.image ? "" : "universe--placeholder"
+  ].filter(Boolean).join(" ");
 
   return universe.href
     ? <a className={className} href={universe.href}>{content}</a>

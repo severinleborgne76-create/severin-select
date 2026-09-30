@@ -6,9 +6,15 @@ export default function ProductCard({ product, lang }) {
   const [photoReady, setPhotoReady] = useState(false);
   const showProducer = product.producer && product.producer !== "À compléter";
 
+  const badge = lang === "fr" ? product.badgeFr : product.badgeEn;
+  const kicker = origin || product.producer;
+
   const content = (
     <>
-      <div className={`product-image${photoReady ? " has-photo" : ""}`}>
+      <div
+        className={`product-image${photoReady ? " has-photo" : ""}`}
+        data-photo-placeholder={!photoReady ? "true" : undefined}
+      >
         {product.image && (
           <img
             src={product.image}
@@ -20,17 +26,18 @@ export default function ProductCard({ product, lang }) {
         {!photoReady && (
           <div className="image-fallback" aria-hidden="true">
             <span className="placeholder-wave" />
-            <span className="placeholder-kicker">{origin}</span>
+            {kicker ? <span className="placeholder-kicker">{kicker}</span> : null}
             <span className="placeholder-title">{title}</span>
           </div>
         )}
+        {badge && <span className="universe-badge">{badge}</span>}
       </div>
       <div className="product-copy">
-        <p className="eyebrow">{origin}</p>
+        {origin ? <p className="eyebrow">{origin}</p> : <p className="eyebrow">{product.producer}</p>}
         <h3>{title}</h3>
         {showProducer && <p>{product.producer}</p>}
         <span className="text-link">
-          {product.status === "active"
+          {product.href
             ? (lang === "fr" ? "Découvrir →" : "Discover →")
             : (lang === "fr" ? "Bientôt →" : "Coming soon →")}
         </span>
