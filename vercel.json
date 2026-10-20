@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/selection/jadran-tuna", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],

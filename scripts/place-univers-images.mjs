@@ -10,7 +10,6 @@ const candidates = [
 ];
 
 const map = {
-  "univers-thon-rouge.jpg": "thon-rouge.jpg",
   "univers-grenouille.jpg": "grenouille.jpg",
   "univers-caviar.jpg": "caviar.jpg",
   "univers-crustaces.jpg": "crustaces.jpg",

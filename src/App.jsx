@@ -1,9 +1,8 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { lazy, Suspense, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import JadranTuna from "./pages/JadranTuna";
 import Grenoucerie from "./pages/Grenoucerie";
 import CrabeRoyal from "./pages/CrabeRoyal";
 import DraftSelection from "./pages/DraftSelection";
@@ -29,7 +28,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/selection/jadran-tuna" element={<JadranTuna />} />
+        <Route path="/selection/jadran-tuna" element={<Navigate to="/" replace />} />
         <Route path="/selection/grenoucerie" element={<Grenoucerie />} />
         <Route path="/selection/crabe-royal" element={<CrabeRoyal />} />
         <Route path="/selection/saint-jacques-normandie" element={<DraftSelection slug="saint-jacques-normandie" />} />

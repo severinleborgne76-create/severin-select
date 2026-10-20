@@ -1,15 +1,5 @@
 export const universes = [
   {
-    slug: "thon-rouge",
-    layout: "thon",
-    href: "/selection/jadran-tuna",
-    titleFr: "Thon rouge",
-    titleEn: "Bluefin tuna",
-    lineFr: "L’Adriatique, une chair profonde.",
-    lineEn: "The Adriatic, a deep flesh.",
-    image: "/images/univers/thon-rouge.jpg"
-  },
-  {
     slug: "grenouille",
     layout: "saint-jacques",
     href: "/selection/grenoucerie",

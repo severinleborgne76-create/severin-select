@@ -14,26 +14,8 @@ Puis ouvrir l'adresse affichée par Vite.
 ## Pages déjà créées
 
 - `/` : homepage FR/EN
-- `/selection/jadran-tuna` : fiche Jadran Tuna FR/EN
-
-## Images à ajouter
-
-Le projet contient volontairement des emplacements d'images mais pas les photos copiées depuis les sites producteurs.
-
-Place les fichiers ici :
-
-```text
-public/images/products/jadran-tuna.jpg
-public/images/products/scallops.jpg
-public/images/products/smoked-salmon.jpg
-public/images/products/amberjack.jpg
-public/images/products/iceland.jpg
-public/images/products/frogs.jpg
-
-public/images/jadran/...
-```
-
-Pour Jadran, demander/valider l'autorisation d'utiliser leurs photos officielles avant publication.
+- `/selection/grenoucerie` : fiche Grenoucerie FR/EN
+- `/selection/crabe-royal` : fiche Crabe Royal de Norvège FR/EN
 
 ## Logo
 

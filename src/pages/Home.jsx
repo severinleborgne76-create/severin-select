@@ -12,7 +12,14 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="hero-media">
-          <img src="/images/hero-bluefin.jpg" alt={fr ? "Thon rouge" : "Bluefin tuna"} />
+          <picture>
+            <source srcSet="/images/hero-crabe-royal.avif?v=2" type="image/avif" />
+            <source srcSet="/images/hero-crabe-royal.webp?v=2" type="image/webp" />
+            <img
+              src="/images/hero-crabe-royal.jpg?v=2"
+              alt={fr ? "Crabe royal de Norvège" : "Norwegian king crab"}
+            />
+          </picture>
         </div>
         <div className="hero-overlay" />
         <div className="hero-copy">

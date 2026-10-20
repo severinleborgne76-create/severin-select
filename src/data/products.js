@@ -1,16 +1,5 @@
 export const products = [
   {
-    slug: "jadran-tuna",
-    href: "/selection/jadran-tuna",
-    titleFr: "Thon rouge de l’Adriatique",
-    titleEn: "Adriatic Bluefin Tuna",
-    originFr: "Croatie",
-    originEn: "Croatia",
-    producer: "Jadran Tuna",
-    image: "/images/products/jadran-tuna.jpg",
-    status: "active"
-  },
-  {
     slug: "normandy-scallops",
     titleFr: "Coquille Saint-Jacques",
     titleEn: "Normandy Scallops",
