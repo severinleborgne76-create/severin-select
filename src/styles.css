@@ -904,30 +904,3 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   object-position: center;
   padding: 0;
 }
-.oursins-cta {
-  margin-top: 28px;
-}
-.jadran-page .contact-section { scroll-margin-top: 154px; }
-@media (max-width: 900px) {
-  .jadran-page .contact-section { scroll-margin-top: 126px; }
-}
-@media (max-width: 620px) {
-  .jadran-page .contact-section { scroll-margin-top: 114px; }
-}
-.oursins-reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity .7s ease, transform .7s ease;
-}
-.oursins-reveal.is-on {
-  opacity: 1;
-  transform: none;
-}
-@media (prefers-reduced-motion: reduce) {
-  .oursins-reveal,
-  .oursins-reveal.is-on {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-}

@@ -37,8 +37,8 @@ export const universes = [
     href: "/selection/oursins-norvege",
     titleFr: "Oursins de Norvège",
     titleEn: "Norwegian sea urchins",
-    lineFr: "L’or des fjords arctiques.",
-    lineEn: "The gold of the Arctic fjords.",
+    lineFr: "Un corail sauvage, récolté à Tromsø.",
+    lineEn: "Wild coral, harvested in Tromsø.",
     image: "/images/univers/oursins-norvege.jpg"
   },
   {

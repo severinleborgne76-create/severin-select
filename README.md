@@ -16,6 +16,7 @@ Puis ouvrir l'adresse affichée par Vite.
 - `/` : homepage FR/EN
 - `/selection/grenoucerie` : fiche Grenoucerie FR/EN
 - `/selection/crabe-royal` : fiche Crabe Royal de Norvège FR/EN
+- `/selection/oursins-norvege` : fiche Oursins sauvages de Norvège — Ecofang FR/EN
 
 ## Logo
 
