@@ -32,6 +32,16 @@ export const universes = [
     image: "/images/crabe-royal/animal.jpg"
   },
   {
+    slug: "oursins-norvege",
+    layout: "oursins",
+    href: "/selection/oursins-norvege",
+    titleFr: "Oursins de Norvège",
+    titleEn: "Norwegian sea urchins",
+    lineFr: "L’or des fjords arctiques.",
+    lineEn: "The gold of the Arctic fjords.",
+    image: "/images/univers/oursins-norvege.jpg"
+  },
+  {
     slug: "ormeau-rouge",
     layout: "ormeau",
     titleFr: "Ormeau rouge d'Islande",

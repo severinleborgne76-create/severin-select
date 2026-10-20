@@ -339,7 +339,7 @@ button, input, textarea { font: inherit; }
 .universe-mosaic {
   display: grid;
   grid-template-columns: 1.15fr 1.05fr 1.2fr;
-  grid-template-rows: repeat(6, minmax(240px, 22vh));
+  grid-template-rows: repeat(8, minmax(240px, 22vh));
   gap: 12px;
 }
 .universe {
@@ -382,6 +382,13 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
 }
 .universe--ormeau .universe-copy p { max-width: 36ch; }
 .universe--coquille { grid-column: 3; grid-row: 5 / 7; }
+.universe--oursins {
+  grid-column: 1 / -1;
+  grid-row: 7 / 9;
+}
+.universe--oursins img {
+  object-position: 50% 62%;
+}
 .universe--coquille img {
   object-position: 50% 46%;
 }
@@ -627,13 +634,15 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   .universe--crustaces,
   .universe--ormeau,
   .universe--couteaux,
-  .universe--coquille {
+  .universe--coquille,
+  .universe--oursins {
     grid-column: auto;
     grid-row: auto;
   }
   .universe--saint-jacques { grid-column: 1 / -1; min-height: 46vh; }
   .universe--crustaces { grid-column: 1 / -1; min-height: 48vh; }
   .universe--ormeau { grid-column: 1 / -1; min-height: 48vh; }
+  .universe--oursins { grid-column: 1 / -1; min-height: 46vh; }
   .universe--coquille { min-height: 44vh; }
   .universe--coquille img { object-position: 50% 44%; }
   .universe--araignee,
@@ -672,12 +681,14 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
   .universe--ormeau,
   .universe--coquille,
   .universe--araignee,
-  .universe--couteaux { grid-column: 1; }
+  .universe--couteaux,
+  .universe--oursins { grid-column: 1; }
   .universe--coquille img { object-position: 50% 55%; }
   .universe { min-height: 62vw; }
   .universe--saint-jacques { min-height: 78vw; }
   .universe--crustaces { min-height: 78vw; }
   .universe--ormeau { min-height: 78vw; }
+  .universe--oursins { min-height: 72vw; }
   .product-grid, .form-grid, .image-band { grid-template-columns: 1fr; }
   .hero { min-height: 82vh; }
   .detail-hero { min-height: 76vh; }
@@ -883,4 +894,40 @@ a.universe:hover .universe-copy h3 { color: var(--copper-light); }
 @media (max-width: 620px) {
   .jadran-hero { min-height: 82vh; }
   .jadran-hero-copy { padding-left: 24px; padding-right: 24px; padding-bottom: 48px; }
+}
+
+.oursins-hero img { object-position: 72% 48%; }
+.oursins-coral img { object-position: 50% 48%; }
+.oursins-snow img { object-position: 50% 42%; }
+.oursins-gallery .jadran-photo img {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+}
+.oursins-cta {
+  margin-top: 28px;
+}
+.jadran-page .contact-section { scroll-margin-top: 154px; }
+@media (max-width: 900px) {
+  .jadran-page .contact-section { scroll-margin-top: 126px; }
+}
+@media (max-width: 620px) {
+  .jadran-page .contact-section { scroll-margin-top: 114px; }
+}
+.oursins-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.oursins-reveal.is-on {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .oursins-reveal,
+  .oursins-reveal.is-on {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
