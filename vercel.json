@@ -1,6 +1,8 @@
 {
   "redirects": [
-    { "source": "/selection/jadran-tuna", "destination": "/", "permanent": true }
+    { "source": "/selection/jadran-tuna", "destination": "/", "permanent": true },
+    { "source": "/selection/baku-caviar", "destination": "/", "permanent": false },
+    { "source": "/images/baku-caviar/:path*", "destination": "/", "permanent": false }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }

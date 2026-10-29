@@ -1,3 +1,6 @@
+STATUT : retiré du site public le 29 octobre 2026, en attente de validation du contrat.
+Pour republier : remettre ce dossier dans public/images/baku-caviar, rétablir la route, la tuile mosaïque et l’entrée sitemap.
+
 Visuels et informations issus du site officiel Baku Caviar.
 Consulté : https://bakucaviar.az (octobre 2026)
 Les fichiers ci-dessous sont copiés localement. Ne pas les servir depuis le site distant.

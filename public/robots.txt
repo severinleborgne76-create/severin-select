@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /selection/baku-caviar
 Sitemap: https://www.severin-select.com/sitemap.xml
