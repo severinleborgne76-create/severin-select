@@ -1,0 +1,77 @@
+Visuels et informations issus du site officiel Baku Caviar.
+Consulté : https://bakucaviar.az (octobre 2026)
+Les fichiers ci-dessous sont copiés localement. Ne pas les servir depuis le site distant.
+
+LOGO
+  logo.svg
+  https://bakucaviar.az/assets/frontend/images/logo.svg
+
+HERO / PRODUIT
+  hero.jpg
+  https://bakucaviar.az/assets/frontend/images/catalog/banner1.png
+  Page : https://bakucaviar.az/caviar
+  osetra-open.jpg
+  https://bakucaviar.az/assets/frontend/images/others/adver.jpg
+  Page : https://bakucaviar.az/
+  packing.jpg
+  https://bakucaviar.az/assets/frontend/images/others/caviar-boxes.jpg
+  Page : https://bakucaviar.az/b2b
+
+FERME / PRODUCTEUR
+  farm-tanks.jpg
+  https://bakucaviar.az/assets/frontend/images/others/hero.jpg
+  Page : https://bakucaviar.az/b2b
+  farm-work.jpg
+  https://bakucaviar.az/assets/frontend/images/history/history.jpg
+  Page : https://bakucaviar.az/b2b
+  sturgeon-young.jpg
+  https://bakucaviar.az/assets/frontend/images/history/history2.jpg
+  Page : https://bakucaviar.az/b2b
+  farm-catch.jpg
+  https://bakucaviar.az/assets/frontend/images/others/believe.jpg
+  Page : https://bakucaviar.az/sustainable
+  farm-cages.jpg
+  https://bakucaviar.az/assets/frontend/images/info/info5.jpg
+  Page : https://bakucaviar.az/sustainable
+  farm-team.jpg
+  https://bakucaviar.az/assets/frontend/images/history/history3.jpg
+  Page : https://bakucaviar.az/sustainable
+  man-sturgeon.jpg
+  https://bakucaviar.az/assets/frontend/images/others/hero2.jpg
+  Page : https://bakucaviar.az/sustainable
+
+ESPÈCES — couvercles utilisés
+  lid-beluga.jpg   https://bakucaviar.az/assets/frontend/images/products/product1.png  (Beluga Huso huso)
+  lid-osetra.jpg   https://bakucaviar.az/assets/frontend/images/products/product4.png  (Osetra Acipenser gueldenstaedtii)
+  Pages : https://bakucaviar.az/caviar et https://bakucaviar.az/b2b
+  Sterlet (Acipenser ruthenus) : aucun visuel produit correspondant trouvé sur bakucaviar.az ; présentation sans photo spécifique.
+
+ESPÈCES — couvercles non utilisés dans la sélection
+  lid-sevruga.jpg  https://bakucaviar.az/assets/frontend/images/products/product3.png  (Sevruga, non proposé)
+  lid-hybrid.jpg   https://bakucaviar.az/assets/frontend/images/products/product2.png  (Beluga hybrid, non proposé)
+
+ESPÈCES — grains (miniatures officielles 222×222)
+  grain-beluga.jpg  https://bakucaviar.az/storage/cache/category-products/e3eb48b7fd093bddf5192245bced823b.jpg
+  grain-osetra.jpg  https://bakucaviar.az/storage/cache/category-products/e1919f18bef955165860bada5f7d0c94.jpg
+  grain-sevruga.jpg https://bakucaviar.az/storage/cache/category-products/2c9b6a57c1ed88eb7ff821dbf46c1c3f.jpg
+  grain-hybrid.jpg  https://bakucaviar.az/storage/cache/category-products/8feed5c10218b0ede9bac3028a511d76.jpg
+  Page : https://bakucaviar.az/caviar
+
+INFORMATIONS RETENUES
+  Producteur : Azerbaijan Fish Farm LLC (AFF), marque Baku Caviar
+  https://bakucaviar.az/azerbaijanfishfarm
+  Ferme : district de Neftchala, estuaire de la Koura, côte ouest de la mer Caspienne
+  Historique : ferme expérimentale 1954 ; privatisation AFF 2017
+  Méthodes décrites : RAS, cages, bassins côtiers ; eau douce de la Koura et eau salée caspienne
+  Espèces proposées (confirmées Murad) : Béluga (Huso huso), Osciètre (Acipenser gueldenstaedtii), Sterlet (Acipenser ruthenus)
+  Formats métalliques confirmés : 30, 50, 100, 125, 250, 500 g — disponibilités à confirmer
+  Sevruga et beluga hybride : non repris dans la sélection proposée
+  B2B / certifications listées par le producteur : https://bakucaviar.az/b2b
+  Authentification des pots (codes liés, usage unique) : https://bakucaviar.az/
+
+NON REPRIS (même si le site les mentionne)
+  Minimum 15 kg, tarifs, délais, livraison, stock
+  Températures de conservation, DLC, conservation après ouverture
+  Allégations santé / médicales
+  Promesses environnementales (lâchers d’esturgeons, « first sustainable »)
+  « Sans additif / sans hormone » comme caractéristique de gamme

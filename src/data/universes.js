@@ -42,6 +42,17 @@ export const universes = [
     image: "/images/univers/oursins-norvege.jpg"
   },
   {
+    slug: "baku-caviar",
+    layout: "caviar",
+    href: "/selection/baku-caviar",
+    titleFr: "Baku Caviar",
+    titleEn: "Baku Caviar",
+    lineFr: "Le caviar d’Azerbaïdjan, élevé en mer Caspienne.",
+    lineEn: "Caviar from Azerbaijan, farmed on the Caspian Sea.",
+    image: "/images/baku-caviar/osetra-open.jpg",
+    imageAlt: "Baku Caviar"
+  },
+  {
     slug: "ormeau-rouge",
     layout: "ormeau",
     titleFr: "Ormeau rouge d'Islande",
